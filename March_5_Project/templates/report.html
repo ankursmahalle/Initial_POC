@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} Data Reports</title>
+    <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>{{ title }} Data Reports</h1>
+<!--    <p>{{ status }} and {{ level }} </p>-->
+<!--    <p>Feels like {{ feels_like }} </p>-->
+
+  <form action="/getData">
+        <input type="text" name="Glucose" id="Glucose" placeholder="Enter Glucose Level" />
+        <button type="submit">Submit</button>
+  </form>
+</body>
+
+</html>
